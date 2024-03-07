@@ -1,9 +1,11 @@
 "use client"
 import { useState } from 'react'
-import LandingPage from './component/landingpage/page';
 import './globals.css'
-import NavBar from './component/navbar/page';
 import { Navbar } from './component/common/Navbar';
+import Hero from './component/common/Hero';
+import Camp from './component/common/Camp';
+import { Guide } from './component/common/Guide';
+import Feature from './component/common/Feature';
 
 
 export default function Home() {
@@ -33,7 +35,10 @@ export default function Home() {
   <div>
     <Navbar/>
     <main className=" relative overflow-hidden">
-Hellow
+     <Hero/>
+     <Camp/>
+     <Guide/>
+     <Feature/>
     </main>
     
   </div>
