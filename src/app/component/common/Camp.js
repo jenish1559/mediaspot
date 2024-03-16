@@ -1,4 +1,3 @@
-import { Cambo } from 'next/font/google'
 import Image from 'next/image'
 import React from 'react'
 import { PEOPLE_URL } from '../../constants'

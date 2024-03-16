@@ -5,7 +5,7 @@ import React from 'react'
 const Feature = () => {
     return (
         <section className="border-2 border-red-500 flex flexCenter 
-    overflow-hiddenbh-feature-bg bg-center bg-no-repeat py-24">
+    overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
 
             <div className="padding-container max-container relative flex w-full justify-end">
                 <div className="flex flex-1 lg:min-h-[900px]">

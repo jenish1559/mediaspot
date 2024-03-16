@@ -6,6 +6,8 @@ import Hero from './component/common/Hero';
 import Camp from './component/common/Camp';
 import { Guide } from './component/common/Guide';
 import Feature from './component/common/Feature';
+import GetApp from './component/common/GetApp';
+import Footer from './component/common/Footer';
 
 
 export default function Home() {
@@ -34,11 +36,13 @@ export default function Home() {
 
   <div>
     <Navbar/>
-    <main className=" relative overflow-hidden">
+    <main className="overflow-hidden"> 
      <Hero/>
      <Camp/>
      <Guide/>
      <Feature/>
+     <GetApp/>
+     <Footer/>
     </main>
     
   </div>
