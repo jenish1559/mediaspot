@@ -1,14 +1,7 @@
 "use client"
 import { useState } from 'react'
 import './globals.css'
-import { Navbar } from './component/common/Navbar';
-import Hero from './component/common/Hero';
-import Camp from './component/common/Camp';
-import { Guide } from './component/common/Guide';
-import Feature from './component/common/Feature';
-import GetApp from './component/common/GetApp';
-import Footer from './component/common/Footer';
-
+import LandingPage from './component/common/LandingPage';
 
 export default function Home() {
   
@@ -34,17 +27,13 @@ export default function Home() {
   //     </MainLayout>
   //  </div>
 
-  <div>
-    <Navbar/>
-    <main className="overflow-hidden"> 
-     <Hero/>
-     <Camp/>
-     <Guide/>
-     <Feature/>
-     <GetApp/>
-     <Footer/>
-    </main>
+  // <div className="bg-teal-950">
+  //   <LandingPage/>
     
+  // </div>
+  <div className="bg-teal-950">
+    <LandingPage/>
+    {/* <AppStart /> */}
   </div>
   )
 }

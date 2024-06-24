@@ -8,9 +8,12 @@ const NavBar = () => {
   return (
     <>
     <div className={` ${sidebarConteinerClass} flex items-center justify-between` }>
-    <SiteLogo />
-    <SearchBox/>
-    <NavMenu/>
+      <div className="h-[50px] w-[90px] flex items-center ">
+      <SiteLogo />
+      </div>
+    
+    {/* <SearchBox/> */}
+    {/* <NavMenu/> */}
     </div>
     </>
   )

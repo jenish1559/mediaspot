@@ -2,23 +2,22 @@ import React from 'react'
 import '../../globals.css'
 import Image from 'next/image'
 import Button from './Button'
+import SearchBox from '../searchbox/page'
+import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32
-    md:gap-28 lg:py-20 xl:flex-row ">
-      <div className="hero-map text-dark" />
+    <section className="max-container  padding-container flex flex-col gap-20 md:py-5 md:pb-32
+    md:gap-28 lg:py-20 xl:flex-row">
+      {/* <div className="hero-map text-dark" /> */}
+      <div className="hero-bg text-dark flex align-middle justify-center" />
 
-      <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
-        <Image
-          src="/camp.svg"
-          alt="camp"
-          width={50}
-          height={50}
-          className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
-        />
-        <h1 className="bold-52 lg:bold-88">putuk truno camp area</h1>
-        <p className="ragular-16 mt-6 text-gray-30 xl:max-w-[520]">
+      <div className="w-[100%] sm:w-full backdrop-blur-sm bg-teal-950 bg-opacity-[.4] rounded-lg p-4  relative z-20 flex  flex-col xl:w-1/2 sm:justify-center">
+        
+        <Image src={"/logo.png"} alt="logo" height={500} width={400} className="invert" />
+        {/* <h1 className="bold-52 lg:bold-88">putuk truno camp area</h1> */}
+
+        <p className="ragular-16 mt-6 text-gray-200 xl:max-w-[520] ">
           We want to be on each of your journeys seeking the
           satisfaction of seeing the incorruptible beauty of nature.
           We can help you on an adventure around the world in just one app
@@ -26,32 +25,25 @@ const Hero = () => {
 
         <div className="my-11 flex flex-wrap gap-5">
           <div className="flex items-center gap-2"></div>
-          {Array(5).fill(1).map((_, index) => (
-            <Image
-              src="/star.svg"
-              key={index}
-              alt="star"
-              height={24}
-              width={24}
-            />
-          ))}
-          <p className='bold-16 lg:bold-20 text-blue-70'>198k
-            <span className='regular-16 lg:regular-20 ml-1'> Excellent Reviews</span>
-          </p>
-
+          <div className="w-full">
+            <SearchBox  page="landingPage"/>
+          </div>
+          <div className="w-full">
+            <Link href={"/home"}><Button title="View Full Site" variant={"bg-primary"} full/></Link>
+          </div>
         </div>
 
-        <div className="flex flex-col w-full gap-3 sm:flex-row">
+        {/* <div className="flex flex-col w-full gap-3 sm:flex-row">
           <Button type="button"
             title="download App"
             variant="btn_green" />
-          <Button type="button"
+          <Button type="button"  
             title="download App"
             icon="/play.svg"
             variant="btn_white_text" />
-        </div>
+        </div> */}
       </div>
-      <div className="relative flex flex-1 items-start 
+       {/*<div className="relative flex flex-1 items-start 
       border-2 border-blue-500">
         <div className="relative flex z-20 w-[268px] flex-col gap-8
               rounded-xl bg-green-90 px-7 py-8">
@@ -76,8 +68,8 @@ const Hero = () => {
           </div>
 
        
-      </div>
-    </div>
+      </div> 
+    </div>*/}
     </section >
   )
 }

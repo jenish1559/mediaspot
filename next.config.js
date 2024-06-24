@@ -5,8 +5,15 @@ const nextConfig = {
           {
             protocol: 'https',
             hostname: 'picsum.photos',
-          
           },
+          {
+            protocol: 'https',
+            hostname: 'static.123series.nl'
+          },
+          {
+            protocol: 'https',
+            hostname: 'wallpapercave.com',
+          }
         ],
       },
 }

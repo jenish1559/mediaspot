@@ -38,6 +38,9 @@ export const theme = {
       darkbrown: "#433e0e",
       light: "#a8f9ff",
       celeste: "#a8f9ff",
+      facebook: "#3B5998",
+      whatsapp: "#25d366",
+      telegram:"#0088cc",
     },
     borderColor: {
       primary: "#f06332",
@@ -58,10 +61,10 @@ export const theme = {
       'feature-bg': "url('/feature-bg.png')",
       'pattern' : "url('/pattern.png')",
       'pattern-2': "url('/pattern-bg.png')",
-      'dune2':"url('/dune2.jpg')"
+      'hero':"url('/r2t2bg.png')"
     },
     screens: {
-      xs: '400px',
+      'xs': '400px',
       '3xl': '1680px',
       '4xl': '2200px',
     },
