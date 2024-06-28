@@ -1,7 +1,7 @@
 'use client'
 import React, {useState} from 'react'
 import { Montserrat } from 'next/font/google'
-import Button from '../component/common/Button'
+import Button from '../../components/ui/button'
 import { login } from '@/auth'
 import { redirect } from 'next/navigation'
 
@@ -50,7 +50,7 @@ export default function  Login(){
               <input type="password" name="password" autoComplete="password" value={formData.password} onChange={handleChange} className="block p-2 rounded-md border-2  border-teal-500 bg-amber-50 text w-full focus:bg-teal-800 focus:border-2 focus:border-amber-400 active:border-2 active:border-amber-400 focus:ring-0" placeholder="password" />
             </div>
             <div className="px-4  mb-2">
-              <Button type="submit" title="Login" variant={"bg-primary"} full />
+              <Button type="submit"> Login </Button>
             </div>
           </form>
         </div>
